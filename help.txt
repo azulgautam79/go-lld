@@ -1,0 +1,38 @@
+1. Run go files
+    go run ./design-patterns/behavioral/strategy
+
+2. Run tests
+    # Run one package
+    go test ./design-patterns/behavioral/strategy
+
+    # Verbose tests
+    go test -v ./design-patterns/behavioral/strategy
+
+    # All project tests
+    go test ./...
+
+    # Run a particular test
+    go test -run TestCreditCardPaymentValidate ./design-patterns/behavioral/strategy
+
+    # Coverage
+    go test -cover ./design-patterns/behavioral/strategy
+
+    # Coverage report
+    go test -coverprofile=coverage.out ./design-patterns/behavioral/strategy
+    go tool cover -html=coverage.out
+
+3. Run benchmark
+    # Benchmarks
+    go test -bench=. ./design-patterns/behavioral/strategy
+
+    # Benchmarks + allocations
+    go test -bench=. -benchmem ./design-patterns/behavioral/strategy
+
+4. Run Race detector
+    go test -race ./...
+
+5. Static analysis
+    go vet ./...
+
+6. Format
+    go fmt ./...
