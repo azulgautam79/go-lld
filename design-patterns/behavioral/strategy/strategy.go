@@ -1,6 +1,6 @@
-package main
+// package main
 
-// package strategy
+package strategy
 
 import (
 	"fmt"
