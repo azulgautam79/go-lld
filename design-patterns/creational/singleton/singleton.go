@@ -1,12 +1,11 @@
-package main
+// package main
+package singleton
 
 import (
 	"fmt"
 	"sync"
 	"time"
 )
-
-// package singleton
 
 type cacheEntry struct {
 	value  string
